@@ -12,6 +12,8 @@ streamlit run main.py
 ---------------------------------------------------------------------------------
 Real Estate Model 
 
-cd
+cd RealEstateModel
+
+jupyter notebook
 
  
