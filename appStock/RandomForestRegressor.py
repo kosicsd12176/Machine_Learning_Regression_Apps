@@ -3,13 +3,15 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from sklearn import metrics
 import numpy as np
+from urllib.request import urlopen
+
 
 def model_RFR(xtrain, ytrain, xtest, ytest):
     # r_f = RandomForestRegressor()
     # r_f.fit(xtrain,ytrain)
     # filename_4 = 'model_4.sav'
     # joblib.dump(r_f, filename_4)
-    loaded_model_4 = joblib.load('saved_models/model_4.sav')
+    loaded_model_4 = joblib.load(urlopen("https://www.dropbox.com/s/i7e4u8vyzp2knjo/model_4.sav?dl=0"))
     y = loaded_model_4.predict(xtest)
     st.write(loaded_model_4)
     st.write("Next plot fits on the training data.")
