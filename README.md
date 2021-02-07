@@ -9,4 +9,9 @@ cd appStock
 
 streamlit run main.py
 
+---------------------------------------------------------------------------------
+Real Estate Model 
+
+cd
+
  
